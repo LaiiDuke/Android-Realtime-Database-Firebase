@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "186079317176",
+    "firebase_url": "https://projectfinal-9e8e9-default-rtdb.firebaseio.com",
+    "project_id": "projectfinal-9e8e9",
+    "storage_bucket": "projectfinal-9e8e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186079317176:android:0a7c3cdb57b8e8de3bb84d",
+        "android_client_info": {
+          "package_name": "com.duke.handwear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186079317176-bt7nd3eseafdbb90forvi8tlt1fdo1s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATeLE4F9F4rjo8F51oUMQRYNVBcFrpUTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186079317176-bt7nd3eseafdbb90forvi8tlt1fdo1s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

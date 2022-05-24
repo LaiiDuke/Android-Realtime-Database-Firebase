@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dataTrackingList = new ArrayList<>();
                 for (DataTracking dataTracking : dataTrackingListAll) {
-                    if (dataTracking.getDateObj().getDay() + 1 == datePicker.getDayOfMonth()
+                    if (dataTracking.getDateObj().getDate() == datePicker.getDayOfMonth()
                     && dataTracking.getDateObj().getMonth() == datePicker.getMonth()
                     && dataTracking.getDateObj().getYear() + 1900 == datePicker.getYear()) {
                         dataTrackingList.add(dataTracking);
@@ -125,6 +125,11 @@ public class MainActivity extends AppCompatActivity {
                 Collections.sort(dataTrackingListAll);
                 if (dataTrackingListAll.size() > 20) {
                     dataTrackingList = dataTrackingListAll.subList(0, 20);
+                    datePicker.init( year, dataTrackingListAll.get(0).getDateObj().getMonth() , dataTrackingListAll.get(0).getDateObj().getDate() , new DatePicker.OnDateChangedListener() {
+                        @Override
+                        public void onDateChanged(DatePicker datePicker, int year, int month, int dayOfMonth) {
+                        }
+                    });
                 }
                 renderData();
                 if (1 == dataTrackingListAll.get(0).getMessage()) {
@@ -140,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
                 // Failed to read value
             }
         });
+
     }
 
 

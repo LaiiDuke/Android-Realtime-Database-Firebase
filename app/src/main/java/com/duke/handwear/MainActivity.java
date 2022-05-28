@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
 
         Description desc1 = new Description();
         desc1.setText("Thông tin SpO2");
-        lineChartSpo2.setDescription(desc);
+        lineChartSpo2.setDescription(desc1);
 
         XAxis xAxis1 = lineChartSpo2.getXAxis();
         xAxis1.setValueFormatter(valueFormatter);
